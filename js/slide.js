@@ -144,7 +144,7 @@ export class Slide {
     }
 }
 
-export class SlideNav extends Slide {
+export default class SlideNav extends Slide {
     constructor (slide, container) {
         super(slide, container);
         this.controlEventsBind();
@@ -196,4 +196,4 @@ export class SlideNav extends Slide {
         this.controlEvent = this.controlEvent.bind(this);
         this.controlActiveItem = this.controlActiveItem.bind(this);
     }
-}
+}   
